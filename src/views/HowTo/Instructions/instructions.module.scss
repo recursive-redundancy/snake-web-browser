@@ -1,0 +1,21 @@
+.instructions {
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  width: fit-content;
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: .2em;
+    margin-top: .4em;
+  }
+  
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: .2em;
+    }
+  }
+}

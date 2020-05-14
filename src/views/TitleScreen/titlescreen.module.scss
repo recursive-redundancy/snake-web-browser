@@ -1,0 +1,41 @@
+@import '../../styles/mixins-flex.scss';
+
+.titlescreen {
+  .container {
+    @include flexbox;
+    @include flex-direction(column);
+    @include flex-wrap(nowrap);
+    @include align-items(center);
+    font-size: 2em;
+    height: 100%;
+    margin: auto;
+    max-width: 20em;
+    position: relative;
+    text-align: center;
+
+    .header {
+      @include flex-grow(1);
+      padding-top: .5em;
+      text-align: center;
+      width: 100%;
+    
+      & > div {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        h1 {
+          font-size: 2.5em;
+          border-bottom: solid .05em;
+        }
+      }
+    }
+
+    .inputGroup {
+      @include flex-grow(0);
+      padding-bottom: 1em;
+      padding-top: .5em;
+      position: relative;
+      text-align: center;
+    }
+  }
+}

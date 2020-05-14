@@ -1,15 +1,50 @@
-![Snake Logo Header](https://danielmorgan.me/games/snake/logo.png)
+<img src="./public/assets/logo-snake.png" style="max-width:400px" />
+
+
 # Snake
-A clone of the classic game Snake where the user controls (with keyboard) 
-a snake made of block segments to collect food pieces. The snake's body 
-grows upon each collection of food, and the goal is to collect as much 
-food as possible and grow the snake as large as possible while avoiding 
-collision with game boundaries and not colliding snake's body into itself.
+A clone of the classic game Snake where the user controls a snake made of block 
+segments to collect food pieces. The snake's body grows upon each collection 
+of food, and the goal is to collect as much food as possible and grow the 
+snake as large as possible while avoiding collision with game boundaries 
+and not colliding snake's body into itself.
+
 # Installation
-Project is a standard single page web app, consisting of single index.html and a 'js' folder with a jquery slim minified script and a 'snake.js' script which is the main application script. The css styles are contained in 'css' folder. Project only need be cloned into a directory and is ready to be served with server utility of your choice.
-# Usage
-Single page web app (game) is served from the index.html located in root directory of project. All game logic and UI logic are located in snake.js.
+Clone this repo to any directory you so choose
+
+`git clone https://github.com/recursive-redundancy/snake-web-browser.git`
+
+Then from within that directory install project dependencies
+
+`npm install`
+
+There are a few dependencies that you should install globally since
+they will be called via the command-line by certain npm scripts, and 
+as such your system needs to be aware of these commands to work properly.
+
+`npm install -g webpack webpack-dev-server rimraf http-server`
+
+# Development
+The package.json includes a npm script for running a development server and
+testing within a web browser
+
+`npm start`
+
+...this will start the webpack-dev-server and is accessed via web browser
+at http://localhost:8080
+
+
+# Production
+The package.json includes a npm script for running a production build served
+via http-server and accessed at http://localhost:8080
+
+`npm run prod:test`
+
+this will run the prod:build script which builds the production bundle in 
+./dist directory and then runs the prod:server for the http-server
+
+
 # Playable Example
-Game is hosted live and can be played on my website at: http://www.danielmorgan.me/games/snake/web/
+Game is hosted live and can be played on my website at: http://snake.danielmorgan.me
+
 # License
 [MIT](https://github.com/recursive-redundancy/snake-web-browser/blob/master/license.txt)
