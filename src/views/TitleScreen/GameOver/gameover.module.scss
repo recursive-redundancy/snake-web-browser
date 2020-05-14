@@ -1,0 +1,30 @@
+@import '../../../styles/mixins-flex.scss';
+
+.wrapper {
+  @include flex-grow(2);
+  position: relative;
+
+  .gameover {
+    border-top: solid .05em #590f0f;
+    border-bottom: solid .05em #590f0f;
+    border-radius: .5em;
+    margin: auto;
+    // margin-bottom: .5em;
+    margin-top: .5em;
+    max-width: 12em;
+    padding: .5em;
+    position: relative;
+    text-align: center;
+
+    h2 {
+      color: #bb0044;
+      font-size: 1.25em;
+      margin-bottom: .25em;
+    }
+
+    p {
+      color: #dbbe60;
+      font-size: .6em;
+    }
+  }
+}

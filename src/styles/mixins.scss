@@ -1,0 +1,18 @@
+@mixin box-sizing($type)
+{
+  -webkit-box-sizing:$type;
+  -moz-box-sizing:$type;
+  box-sizing:$type;
+}
+
+@mixin touch-action($action) {
+  touch-action: $action;
+  -ms-touch-action: $action;
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}

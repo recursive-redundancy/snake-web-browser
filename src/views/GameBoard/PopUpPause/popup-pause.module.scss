@@ -1,0 +1,28 @@
+.pause {
+  display: block;
+  left: 0;
+  opacity: 0.75;
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  z-index: 99;
+
+  .container {
+    display: block;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+
+    .pauseText {
+      color: rgba(160, 0, 0, 0.6);
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 5em;
+      font-weight: bold;
+      height: 100%;
+      letter-spacing: 0em;
+      line-height: 1em;
+    }
+  }
+}

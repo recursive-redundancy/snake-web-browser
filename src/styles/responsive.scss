@@ -1,0 +1,39 @@
+/**
+ * Initially, change html root element font-size by pixels
+ * based on screen size at 3 levels - small, medium and large
+ * This sizing is to accomodate older browsers that don't
+ * understand sizing font by units relative to viewport (vh & vw)
+ * Below this, size html root element by viewport units
+ * which is understood by current browsers and allows a more
+ * precise sizing of font relative to the viewport size
+ */
+
+// Small
+@media screen and (max-width: 599px) and (orientation: portrait),
+(max-height: 599px) and (orientation: landscape) {
+  html {
+    font-size: 16px;
+  }
+}
+
+// Medium
+@media screen and (min-width: 600px) and (max-width: 1199px) and (orientation: portrait),
+(min-height: 600px) and (max-height: 1199px) and (orientation: landscape) {
+  html {
+    font-size: 24px;
+  }
+}
+
+// Large
+@media screen and (min-width: 1200px) and (orientation: portrait),
+(min-height: 1200px) and (orientation: landscape) {
+  html {
+    font-size: 42px;
+  }
+}
+
+// Universal scaling relative to viewport
+html {
+  font-size: 5vm;
+  font-size: 5vmin;
+}

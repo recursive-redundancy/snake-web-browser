@@ -1,0 +1,25 @@
+@import '../../../../styles/mixins.scss';
+
+.radio {
+  display: table;
+  font-size: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+
+  .row {
+    display: table-cell;
+
+    label {
+      padding-left: .5em;
+      vertical-align: middle;
+    }
+      
+    input[type=radio] {
+      @include transform(scale(2, 2));
+      border-radius: 3em;
+      display: inline-block;
+      outline: none;
+      vertical-align: middle;
+    }
+  }
+}

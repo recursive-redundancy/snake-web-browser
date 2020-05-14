@@ -1,0 +1,15 @@
+  .scoreboard {
+    bottom: .25em;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    width: 100%;
+
+    span {
+      color: rgba(140, 49, 49, 0.75);
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 0;
+    }
+  }
